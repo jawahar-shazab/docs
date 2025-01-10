@@ -5,12 +5,13 @@ theme:
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  logo: assets/images.jpg
+  logo: assets/shazabLogo.png
   favicon: assets/favicon.ico
   features:
-    - navigation.footer
+    - navigation.tabs
+    - toc.integrate
   palette:
-    # Dark Mode
+    # Dark Mode
     - scheme: slate
       toggle:
         icon: material/weather-sunny
@@ -37,3 +38,11 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+          mermaid:
+            themeVariables:
+              scale: 1.6
+
+nav:
+  - Home: index.md
+  - Diagram: diagram.md
+  - API: api.md
