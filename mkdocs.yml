@@ -1,5 +1,5 @@
-site_name: My MkDocs Material Documentation
-site_url: https://sitename.example
+site_name: Hawk Docs
+site_url: https://jawahar-shazab.github.io/docs
 theme:
   name: material
   font:
