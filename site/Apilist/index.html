@@ -1,0 +1,4156 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jawahar-shazab.github.io/docs/Apilist/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../diagram-examples/">
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Apilist - Hawk Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRed+Hat+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Red Hat Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#apis" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Hawk Docs" class="md-header__button md-logo" aria-label="Hawk Docs" data-md-component="logo">
+      
+  <img src="../assets/images.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hawk Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Apilist
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Hawk Docs" class="md-nav__button md-logo" aria-label="Hawk Docs" data-md-component="logo">
+      
+  <img src="../assets/images.jpg" alt="logo">
+
+    </a>
+    Hawk Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Apilist
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Apilist
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      API's
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      AuthRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AuthRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create new user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Logout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-refresh-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Refresh Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-forgot-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Forgot Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-reset-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Reset Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-reset-password-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Reset Password Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-request-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Request Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-send-verification-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Send verification email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-verify-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Verify email
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      AccessRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AccessRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-get-side-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Get side menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-change-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Change Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-all-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Get All Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-agent-heartbeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Agent Heartbeat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-get-agents-by-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Get Agents by Site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Get Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-update-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Update Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-delete-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Delete Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-agent-onboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Agent Onboarding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-agent-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Agent Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-agent-poll" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Agent Poll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-start-agent-poll" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Start Agent Poll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-stop-agent-poll" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Stop Agent Poll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-start-ml-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Start ML Engine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-stop-ml-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Stop ML Engine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-agent-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Agent Stats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-agent-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Agent Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-get-agent-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Get Agent Networks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-discover-cameras-username-and-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Discover Cameras (Username and Password)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-discover-cameras-network-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Discover Cameras (Network Interface)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentshistory" class="md-nav__link">
+    <span class="md-ellipsis">
+      AgentsHistory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AgentsHistory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-get-agents-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Get Agents History
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-agent-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Agent History
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-delete-agent-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Delete Agent History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cameras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cameras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-cameras" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Cameras
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-capture-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Capture Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4create-camera-by-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Create Camera by Site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-create-camera-by-site-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Create Camera by Site URL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6get-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Get Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8delete-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Delete Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9update-camera-with-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Update Camera with URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      EventRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EventRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-event-by-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Event by Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-event-logs-by-time-and-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get Event Logs by Time and Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-get-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Get Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5update-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Update Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6delete-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Delete Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7get-dashboard-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Get Dashboard Alert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-acknowledge-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Acknowledge Event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheduleroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      ScheduleRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ScheduleRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Schedules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-detector-configuration-by-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get Detector Configuration by Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4push-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Push Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6update-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Update Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7delete-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Delete Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datalakeroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DataLakeRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DataLakeRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-data-lakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Data Lakes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#businessaccountroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      BusinessAccountRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BusinessAccountRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-business-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Business Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-all-business-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get All Business Switches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4get-business-accounts-by-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Get Business Accounts by Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-and-assign-business-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get and Assign Business Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6get-new-navbar-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Get New Navbar List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-get-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Get Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8update-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Update Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9delete-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Delete Business Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#userroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      UserRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UserRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3create-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Create Super Admin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4upload-user-avatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Upload User Avatar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5reset-user-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Reset User Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Get User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8delete-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Delete User
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roleroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      RoleRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RoleRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-business-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Business Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-all-roles-with-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get All Roles with Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4get-all-users-grouped-by-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Get All Users Grouped by Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-current-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get Current Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6assign-super-admin-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Assign Super Admin Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-get-role-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Get Role by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8update-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Update Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9delete-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Delete Role
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roiroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      RoiRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RoiRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create ROI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-rois" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get ROIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3create-roi-with-detector-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Create ROI with Detector Reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4update-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Update ROI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5delete-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Delete ROI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6get-roi-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Get ROI by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-roi-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update ROI by ID
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detectordefroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DetectorDefRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DetectorDefRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-detector-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Detector Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-specific-detector-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Specific Detector Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detectorconfigroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DetectorConfigRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DetectorConfigRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-detector-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Detector Configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-detectors-by-roi-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Get Detectors by ROI References
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4push-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Push Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-detectors-without-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get Detectors Without Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get-detector-config-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Get Detector Config by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-delete-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Delete Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9get-detector-config-by-camera-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Get Detector Config by Camera Reference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siteroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      SiteRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SiteRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-site-and-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a Site and Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fetch-all-sites-for-a-business" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fetch All Sites for a Business
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-create-multiple-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Create Multiple Sites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fetch-site-details-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fetch Site Details by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-update-site-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Update Site Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-delete-a-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Delete a Site
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentoproute" class="md-nav__link">
+    <span class="md-ellipsis">
+      AgentOpRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AgentOpRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-operation-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Operation Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboardroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DashboardRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DashboardRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fetch-all-businesses-or-specific-business-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fetch All Businesses or Specific Business Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fetch-all-businesses-for-admin-dropdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fetch All Businesses for Admin Dropdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fetch-businesses-by-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fetch Businesses by Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-fetch-assignable-customers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fetch Assignable Customers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-assign-business-to-partner" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Assign Business to Partner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-fetch-all-businesses-except-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Fetch All Businesses Except Current
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-fetch-business-details-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Fetch Business Details by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-update-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Update Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-delete-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Delete Business Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pusherroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      PusherRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PusherRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1authenticate-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Authenticate User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2authenticate-user-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Authenticate User (POST)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3authorize-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Authorize User
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notificationroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      NotificationRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NotificationRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-notification-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Notification List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2create-notification-developmenttesting-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Create Notification (Development/Testing Only)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-acknowledge-notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Acknowledge Notification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4get-notification-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Get Notification by ID
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lookuproute" class="md-nav__link">
+    <span class="md-ellipsis">
+      LookupRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LookupRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-get-all-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.. Get All Constants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovercameraroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DiscoverCameraRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DiscoverCameraRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1start-camera-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Start Camera Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-camera-discovery-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Camera Discovery List
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlanRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PlanRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-plan-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Plan Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collaborationroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      CollaborationRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CollaborationRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-collaboration-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Collaboration Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagram-examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagram Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      API's
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      AuthRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AuthRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create new user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-logout" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Logout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-refresh-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Refresh Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-forgot-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Forgot Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-reset-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Reset Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-reset-password-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Reset Password Request
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-request-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Request Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-send-verification-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Send verification email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-verify-email" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Verify email
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accessroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      AccessRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AccessRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-get-side-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Get side menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-change-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Change Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agents
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agents">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-all-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Get All Agents
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-agent-heartbeat" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Agent Heartbeat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-get-agents-by-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Get Agents by Site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Get Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-update-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Update Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-delete-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Delete Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-agent-onboarding" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Agent Onboarding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-agent-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Agent Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-agent-poll" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Agent Poll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-start-agent-poll" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Start Agent Poll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-stop-agent-poll" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Stop Agent Poll
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-start-ml-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Start ML Engine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-stop-ml-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Stop ML Engine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-agent-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Agent Stats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-agent-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Agent Info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-get-agent-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Get Agent Networks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-discover-cameras-username-and-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Discover Cameras (Username and Password)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-discover-cameras-network-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Discover Cameras (Network Interface)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentshistory" class="md-nav__link">
+    <span class="md-ellipsis">
+      AgentsHistory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AgentsHistory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-get-agents-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Get Agents History
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-agent-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Agent History
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-delete-agent-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Delete Agent History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cameras" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cameras
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cameras">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-cameras" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Cameras
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-capture-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Capture Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4create-camera-by-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Create Camera by Site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-create-camera-by-site-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Create Camera by Site URL
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6get-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Get Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8delete-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Delete Camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9update-camera-with-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Update Camera with URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      EventRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EventRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-event-by-detector" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Event by Detector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-event-logs-by-time-and-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get Event Logs by Time and Group
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-get-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Get Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5update-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Update Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6delete-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Delete Event
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7get-dashboard-alert" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Get Dashboard Alert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-acknowledge-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Acknowledge Event
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheduleroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      ScheduleRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ScheduleRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-schedules" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Schedules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-detector-configuration-by-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get Detector Configuration by Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4push-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Push Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6update-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Update Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7delete-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Delete Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datalakeroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DataLakeRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DataLakeRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-data-lakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Data Lakes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#businessaccountroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      BusinessAccountRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BusinessAccountRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-business-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Business Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-all-business-switches" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get All Business Switches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4get-business-accounts-by-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Get Business Accounts by Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-and-assign-business-accounts" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get and Assign Business Accounts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6get-new-navbar-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Get New Navbar List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-get-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Get Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8update-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Update Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9delete-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Delete Business Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#userroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      UserRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UserRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3create-super-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Create Super Admin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4upload-user-avatar" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Upload User Avatar
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5reset-user-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Reset User Password
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Get User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8delete-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Delete User
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roleroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      RoleRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RoleRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-business-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Business Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3get-all-roles-with-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Get All Roles with Users
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4get-all-users-grouped-by-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Get All Users Grouped by Roles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-current-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get Current Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6assign-super-admin-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Assign Super Admin Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-get-role-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Get Role by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8update-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.Update Role
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9delete-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Delete Role
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roiroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      RoiRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RoiRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create ROI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-rois" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get ROIs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3create-roi-with-detector-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Create ROI with Detector Reference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4update-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Update ROI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5delete-roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Delete ROI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6get-roi-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.Get ROI by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-roi-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update ROI by ID
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detectordefroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DetectorDefRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DetectorDefRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-detector-definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Detector Definitions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-specific-detector-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Specific Detector Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detectorconfigroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DetectorConfigRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DetectorConfigRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-get-detector-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Get Detector Configurations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-get-detectors-by-roi-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Get Detectors by ROI References
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4push-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Push Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5get-detectors-without-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.Get Detectors Without Schedule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-get-detector-config-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Get Detector Config by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7update-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.Update Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-delete-detector-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Delete Detector Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9get-detector-config-by-camera-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.Get Detector Config by Camera Reference
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siteroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      SiteRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SiteRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-site-and-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a Site and Agent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fetch-all-sites-for-a-business" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fetch All Sites for a Business
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-create-multiple-sites" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Create Multiple Sites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fetch-site-details-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fetch Site Details by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-update-site-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Update Site Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-delete-a-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Delete a Site
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#agentoproute" class="md-nav__link">
+    <span class="md-ellipsis">
+      AgentOpRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AgentOpRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1create-operation-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Create Operation Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dashboardroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DashboardRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DashboardRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create a Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-fetch-all-businesses-or-specific-business-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Fetch All Businesses or Specific Business Details
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-fetch-all-businesses-for-admin-dropdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Fetch All Businesses for Admin Dropdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-fetch-businesses-by-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Fetch Businesses by Type
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-fetch-assignable-customers" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Fetch Assignable Customers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-assign-business-to-partner" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Assign Business to Partner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-fetch-all-businesses-except-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Fetch All Businesses Except Current
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-fetch-business-details-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Fetch Business Details by ID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-update-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Update Business Account
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-delete-business-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Delete Business Account
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pusherroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      PusherRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PusherRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1authenticate-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Authenticate User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2authenticate-user-post" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Authenticate User (POST)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3authorize-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.Authorize User
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notificationroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      NotificationRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="NotificationRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-notification-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Notification List
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2create-notification-developmenttesting-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Create Notification (Development/Testing Only)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-acknowledge-notification" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Acknowledge Notification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4get-notification-by-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.Get Notification by ID
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lookuproute" class="md-nav__link">
+    <span class="md-ellipsis">
+      LookupRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LookupRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-get-all-constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.. Get All Constants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discovercameraroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      DiscoverCameraRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DiscoverCameraRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1start-camera-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Start Camera Discovery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2get-camera-discovery-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Get Camera Discovery List
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      PlanRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PlanRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-plan-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Plan Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collaborationroute" class="md-nav__link">
+    <span class="md-ellipsis">
+      CollaborationRoute
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CollaborationRoute">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1get-collaboration-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Get Collaboration Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Apilist</h1>
+
+<h2 id="apis">API's</h2>
+<h2 id="authroute">AuthRoute</h2>
+<h4 id="1-create-new-user">1. Create new user</h4>
+<div class="highlight"><pre><span></span><code>POST  /v1/auth/register
+</code></pre></div>
+<p>Registers a new user in the system.</p>
+<h4 id="2-login">2. Login</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/login
+</code></pre></div>
+<p>Authenticates a user and generates an access token.</p>
+<h4 id="3-logout">3. Logout</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/logout
+</code></pre></div>
+<p>Logs out the user and invalidates their current session.</p>
+<h4 id="4-refresh-token">4. Refresh Token</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/refresh-tokens
+</code></pre></div>
+<p>Generates a new access token using a valid refresh token.</p>
+<h4 id="5-forgot-password">5. Forgot Password</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/forgot-password
+</code></pre></div>
+<p>Sends a password reset link to the user's registered email address.</p>
+<h4 id="6-reset-password">6. Reset Password</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/reset-password
+</code></pre></div>
+<p>Resets the user's password using the provided token.</p>
+<h4 id="7-reset-password-request">7. Reset Password Request</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/reset-password-request
+</code></pre></div>
+<p>Requests a password reset for the user's account.</p>
+<h4 id="8-request-password">8. Request Password</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/request-password
+</code></pre></div>
+<p>Initiates a process to retrieve or reset the user's password.</p>
+<h4 id="9-send-verification-email">9. Send verification email</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/send-verification-email
+</code></pre></div>
+<p>Sends an email to verify the user's email address.</p>
+<h4 id="10-verify-email">10. Verify email</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth/verify-email
+</code></pre></div>
+<p>Verifies the user's email address using the provided token.</p>
+<hr />
+<h2 id="accessroute">AccessRoute</h2>
+<h4 id="1-get-side-menu">1. Get side menu</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/access/sideMenu
+</code></pre></div>
+<p>Fetches the side menu structure based on the user's role</p>
+<h4 id="2-change-account">2. Change Account</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/access/change-account
+</code></pre></div>
+<p>Changes the user's role or account and regenerates the JWT token.</p>
+<hr />
+<h2 id="agents">Agents</h2>
+<h4 id="1-create-agent">1. Create Agent</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/agents/
+</code></pre></div>
+<p>Creates a new agent in the database.</p>
+<h4 id="2-get-agents">2. Get Agents</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/
+</code></pre></div>
+<p>Fetches a list of all agents.</p>
+<h4 id="3-get-all-agents">3. Get All Agents</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/all
+</code></pre></div>
+<p>Fetches all agents, including their detailed information.</p>
+<h4 id="4-agent-heartbeat">4. Agent Heartbeat</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/heartBeat/:agentId
+</code></pre></div>
+<p>Checks the heartbeat status of a specific agent.</p>
+<h4 id="5-get-agents-by-site">5. Get Agents by Site</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/site/:siteRef
+</code></pre></div>
+<p>Fetches agents associated with a specific site.</p>
+<h4 id="6-get-agent">6. Get Agent</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/:agentId
+</code></pre></div>
+<p>Retrieves detailed information about a specific agent.</p>
+<h4 id="7-update-agent">7. Update Agent</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/agents/:agentId
+</code></pre></div>
+<p>Updates information about a specific agent.</p>
+<h4 id="8-delete-agent">8. Delete Agent</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/agents/:agentId
+</code></pre></div>
+<p>Deletes a specific agent.</p>
+<h4 id="9-agent-onboarding">9. Agent Onboarding</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/borg/:obKey
+</code></pre></div>
+<p>Fetches onboarding details for an agent using an onboarding key.</p>
+<h4 id="10-agent-info">10. Agent Info</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/getInfo/:agentId
+</code></pre></div>
+<p>Retrieves information about a specific agent.</p>
+<h4 id="11-agent-poll">11. Agent Poll</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentPoll/:agentId
+</code></pre></div>
+<p>Initiates a poll request for a specific agent.</p>
+<h4 id="12-start-agent-poll">12. Start Agent Poll</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentPollStart/:agentId
+</code></pre></div>
+<p>Starts the polling process for a specific agent.</p>
+<h4 id="13-stop-agent-poll">13. Stop Agent Poll</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentPollStop/:agentId
+</code></pre></div>
+<p>Stops the polling process for a specific agent.</p>
+<h4 id="14-start-ml-engine">14. Start ML Engine</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentStartMLEngine/:agentId
+</code></pre></div>
+<p>Starts the machine learning engine for a specific agent.</p>
+<h4 id="15-stop-ml-engine">15. Stop ML Engine</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentStopMLEngine/:agentId
+</code></pre></div>
+<p>Stops the machine learning engine for a specific agent.</p>
+<h4 id="16-agent-stats">16. Agent Stats</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentStats/:agentId
+</code></pre></div>
+<p>Fetches statistics for a specific agent.</p>
+<h4 id="17-agent-info">17. Agent Info</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/agentInfo/:agentId
+</code></pre></div>
+<p>Retrieves information about a specific agent.</p>
+<h4 id="18-get-agent-networks">18. Get Agent Networks</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/getAgentNetworks/:agentId
+</code></pre></div>
+<p>Fetches the network configuration of a specific agent.</p>
+<h4 id="19-discover-cameras-username-and-password">19. Discover Cameras (Username and Password)</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/discover/:agentId/:username/:password
+</code></pre></div>
+<p>Discovers cameras using a username and password.</p>
+<h4 id="20-discover-cameras-network-interface">20. Discover Cameras (Network Interface)</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agents/discover/:agentId/:networkInterface
+</code></pre></div>
+<p>Discovers cameras using a network interface.</p>
+<hr />
+<h2 id="agentshistory">AgentsHistory</h2>
+<h4 id="1-get-agents-history">1. Get Agents History</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agentHistory/
+</code></pre></div>
+<p>Fetches the history of all agents.</p>
+<h4 id="2-get-agent-history">2. Get Agent History</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/agentHistory/:agentHistoryId
+</code></pre></div>
+<p>Retrieves the history of a specific agent.</p>
+<h4 id="3-delete-agent-history">3. Delete Agent History</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/agentHistory/:agentHistoryId
+</code></pre></div>
+<p>Deletes the history of a specific agent.</p>
+<hr />
+<h2 id="cameras">Cameras</h2>
+<h4 id="1create-camera">1.Create Camera</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/cameras/
+</code></pre></div>
+<p>Creates a new camera.</p>
+<h4 id="2get-cameras">2.Get Cameras</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/cameras/
+</code></pre></div>
+<p>Fetches a list of all cameras.</p>
+<h4 id="3-capture-camera">3. Capture Camera</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/cameras/capture/:cameraId
+</code></pre></div>
+<p>Captures an image from a specific camera.</p>
+<h4 id="4create-camera-by-site">4.Create Camera by Site</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/cameras/site
+</code></pre></div>
+<p>Creates a camera associated with a specific site.</p>
+<h4 id="5-create-camera-by-site-url">5. Create Camera by Site URL</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/cameras/site/url
+</code></pre></div>
+<p>Creates a camera using a site URL.</p>
+<h4 id="6get-camera">6.Get Camera</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/cameras/:cameraId
+</code></pre></div>
+<p>Fetches details of a specific camera.</p>
+<h4 id="7update-camera">7.Update Camera</h4>
+<div class="highlight"><pre><span></span><code>PUT /v1/cameras/:cameraId
+</code></pre></div>
+<p>Updates the information of a specific camera.</p>
+<h4 id="8delete-camera">8.Delete Camera</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/cameras/:cameraId
+</code></pre></div>
+<p>Deletes a specific camera.</p>
+<h4 id="9update-camera-with-url">9.Update Camera with URL</h4>
+<div class="highlight"><pre><span></span><code>PUT /v1/cameras/url/:cameraId
+</code></pre></div>
+<p>Updates camera details using a URL.</p>
+<hr />
+<h2 id="eventroute">EventRoute</h2>
+<h4 id="1create-event">1.Create Event</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/events/
+</code></pre></div>
+<p>Creates a new event in the system.</p>
+<h4 id="2get-event-by-detector">2.Get Event by Detector</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/events/:siteRef/:agentRef/:detectorRef
+</code></pre></div>
+<p>Retrieves events associated with a specific site, agent, and detector.</p>
+<h4 id="3get-event-logs-by-time-and-group">3.Get Event Logs by Time and Group</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/events/aggregate
+</code></pre></div>
+<p>Fetches event logs grouped by time.</p>
+<h4 id="4-get-event">4. Get Event</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/events/:eventId
+</code></pre></div>
+<p>Retrieves details of a specific event by its ID.</p>
+<h4 id="5update-event">5.Update Event</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/events/:eventId
+</code></pre></div>
+<p>Updates the details of a specific event.</p>
+<h4 id="6delete-event">6.Delete Event</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/events/:eventId
+</code></pre></div>
+<p>Deletes a specific event by its ID.</p>
+<h4 id="7get-dashboard-alert">7.Get Dashboard Alert</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/events/dashboard/alert
+</code></pre></div>
+<p>Fetches dashboard alerts for events.</p>
+<h4 id="8-acknowledge-event">8. Acknowledge Event</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/events/acknowledge/:eventId
+</code></pre></div>
+<p>Acknowledges a specific event.</p>
+<hr />
+<h2 id="scheduleroute">ScheduleRoute</h2>
+<h4 id="1-create-schedule">1. Create Schedule</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/schedules/
+</code></pre></div>
+<p>Creates a new schedule in the system.</p>
+<h4 id="2-get-schedules">2. Get Schedules</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/schedules/
+</code></pre></div>
+<p>Retrieves all schedules.</p>
+<h4 id="3get-detector-configuration-by-agent">3.Get Detector Configuration by Agent</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/schedules/getDetectorConfigByAgent
+</code></pre></div>
+<p>Fetches detector configuration associated with a specific agent.</p>
+<h4 id="4push-schedule">4.Push Schedule</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/schedules/pushSchedule/:agentId
+</code></pre></div>
+<p>Pushes a schedule to the specified agent.</p>
+<h4 id="5get-schedule">5.Get Schedule</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/schedules/:scheduleId
+</code></pre></div>
+<p>Retrieves details of a specific schedule by its ID.</p>
+<h4 id="6update-schedule">6.Update Schedule</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/schedules/:scheduleId
+</code></pre></div>
+<p>Updates the details of a specific schedule.</p>
+<h4 id="7delete-schedule">7.Delete Schedule</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/schedules/:scheduleId
+</code></pre></div>
+<p>Deletes a specific schedule by its ID.</p>
+<hr />
+<h2 id="datalakeroute">DataLakeRoute</h2>
+<h4 id="1get-data-lakes">1.Get Data Lakes</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/dataLakes/
+</code></pre></div>
+<p>Retrieves all available data lakes.</p>
+<hr />
+<h2 id="businessaccountroute">BusinessAccountRoute</h2>
+<h4 id="1create-business-account">1.Create Business Account</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/businessAccounts/
+</code></pre></div>
+<p>Creates a new business account in the system.</p>
+<h4 id="2-get-business-accounts">2. Get Business Accounts</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/
+</code></pre></div>
+<p>Retrieves all business accounts.</p>
+<h4 id="3get-all-business-switches">3.Get All Business Switches</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/AllBusiness
+</code></pre></div>
+<p>Retrieves all business switches.</p>
+<h4 id="4get-business-accounts-by-type">4.Get Business Accounts by Type</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/business-type/:typeNo
+</code></pre></div>
+<p>Fetches business accounts based on a specific type.</p>
+<h4 id="5get-and-assign-business-accounts">5.Get and Assign Business Accounts</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/assign
+PATCH /v1/businessAccounts/assign
+</code></pre></div>
+<p>Retrieves and assigns business accounts.</p>
+<h4 id="6get-new-navbar-list">6.Get New Navbar List</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/navbar
+</code></pre></div>
+<p>Fetches a new navbar list for business accounts.</p>
+<h4 id="7-get-business-account">7. Get Business Account</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/:businessAccountId
+</code></pre></div>
+<p>Retrieves details of a specific business account by its ID.</p>
+<h4 id="8update-business-account">8.Update Business Account</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/businessAccounts/:businessAccountId
+</code></pre></div>
+<p>Updates a specific business account by its ID.</p>
+<h4 id="9delete-business-account">9.Delete Business Account</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/businessAccounts/:businessAccountId
+</code></pre></div>
+<p>Deletes a specific business account by its ID.</p>
+<hr />
+<h2 id="userroute">UserRoute</h2>
+<h4 id="1create-user">1.Create User</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/users/
+</code></pre></div>
+<p>Creates a new user in the system.</p>
+<h4 id="2get-users">2.Get Users</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/users/
+</code></pre></div>
+<p>Retrieves all users.</p>
+<h4 id="3create-super-admin">3.Create Super Admin</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/users/create-super-admin/
+</code></pre></div>
+<p>Creates a super admin user.</p>
+<h4 id="4upload-user-avatar">4.Upload User Avatar</h4>
+<div class="highlight"><pre><span></span><code>PUT /v1/users/upload-avatar/:userId
+</code></pre></div>
+<p>Uploads an avatar for a specific user</p>
+<h4 id="5reset-user-password">5.Reset User Password</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/users/reset-password/:userId
+</code></pre></div>
+<p>Resets the password for a specific user.</p>
+<h4 id="6-get-user">6. Get User</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/users/:userId
+</code></pre></div>
+<p>Retrieves details of a specific user by their ID.</p>
+<h4 id="7update-user">7.Update User</h4>
+<div class="highlight"><pre><span></span><code>PUT /v1/users/:userId
+</code></pre></div>
+<p>Updates details of a specific user.</p>
+<h4 id="8delete-user">8.Delete User</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/users/:userId
+</code></pre></div>
+<p>Deletes a specific user by their ID.</p>
+<hr />
+<h2 id="roleroute">RoleRoute</h2>
+<h4 id="1get-roles">1.Get Roles</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/roles/
+</code></pre></div>
+<p>Retrieves all roles.</p>
+<h4 id="2get-business-roles">2.Get Business Roles</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/roles/business
+</code></pre></div>
+<p>Fetches roles associated with businesses.</p>
+<h4 id="3get-all-roles-with-users">3.Get All Roles with Users</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/roles/role-user
+</code></pre></div>
+<p>Retrieves all roles with their associated users.</p>
+<h4 id="4get-all-users-grouped-by-roles">4.Get All Users Grouped by Roles</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/roles/user-groupby-roles
+</code></pre></div>
+<p>Fetches all users grouped by their roles.</p>
+<h4 id="5get-current-role">5.Get Current Role</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/roles/current-role
+</code></pre></div>
+<p>Retrieves the current role of the authenticated user.</p>
+<h4 id="6assign-super-admin-role">6.Assign Super Admin Role</h4>
+<div class="highlight"><pre><span></span><code>PUT /v1/roles/assign-super-admin/:userId
+</code></pre></div>
+<p>Assigns the Super Admin role to a specific user by their ID.</p>
+<h4 id="7-get-role-by-id">7. Get Role by ID</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/roles/:roleId
+</code></pre></div>
+<p>Retrieves details of a specific role using its unique ID.</p>
+<h4 id="8update-role">8.Update Role</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/roles/:roleId
+</code></pre></div>
+<p>Updates the details of an existing role using its ID.</p>
+<h4 id="9delete-role">9.Delete Role</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/roles/:roleId
+</code></pre></div>
+<p>Deletes a role from the system using its unique ID.</p>
+<hr />
+<h2 id="roiroute">RoiRoute</h2>
+<h4 id="1create-roi">1.Create ROI</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/rois/
+</code></pre></div>
+<p>Creates a new Region of Interest (ROI) in the system.</p>
+<h4 id="2get-rois">2.Get ROIs</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/rois/
+</code></pre></div>
+<p>Retrieves all ROIs available in the system.</p>
+<h4 id="3create-roi-with-detector-reference">3.Create ROI with Detector Reference</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/rois/detectorRef/:detectorRef/:agentRef
+</code></pre></div>
+<p>Creates a new ROI and links it to a specific detector and agent.</p>
+<h4 id="4update-roi">4.Update ROI</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/rois/:roiId/:agentRef
+</code></pre></div>
+<p>Updates a specific ROI linked to an agent by its ID.</p>
+<h4 id="5delete-roi">5.Delete ROI</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/rois/:roiId/:detectorRef/:agentRef
+</code></pre></div>
+<p>Deletes a specific ROI using its ID, detector reference, and agent reference.</p>
+<h4 id="6get-roi-by-id">6.Get ROI by ID</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/rois/:roiId
+</code></pre></div>
+<p>Retrieves details of a specific ROI by its unique ID.</p>
+<h4 id="7update-roi-by-id">7.Update ROI by ID</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/rois/:roiId
+</code></pre></div>
+<p>Updates the details of a specific ROI by its ID.</p>
+<hr />
+<h2 id="detectordefroute">DetectorDefRoute</h2>
+<h4 id="1get-detector-definitions">1.Get Detector Definitions</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorDefs/
+</code></pre></div>
+<p>Retrieves a list of all available detector definitions.</p>
+<h4 id="2get-specific-detector-definition">2.Get Specific Detector Definition</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorDefs/:detectorDefId
+</code></pre></div>
+<p>Retrieves details of a specific detector definition by its ID.</p>
+<hr />
+<h2 id="detectorconfigroute">DetectorConfigRoute</h2>
+<h4 id="1-create-detector-config">1. Create Detector Config</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/detectorConfigs/
+</code></pre></div>
+<p>Creates a new detector configuration in the system.</p>
+<h4 id="2-get-detector-configurations">2. Get Detector Configurations</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorConfigs/
+</code></pre></div>
+<p>Retrieves a list of all detector configurations.</p>
+<h4 id="3-get-detectors-by-roi-references">3. Get Detectors by ROI References</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorConfigs/byRois
+</code></pre></div>
+<p>Fetches detectors associated with specific ROI references.</p>
+<h4 id="4push-detector-config">4.Push Detector Config</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/detectorConfigs/pushConf/:agentId
+</code></pre></div>
+<p>Pushes the detector configuration to a specified agent.</p>
+<h4 id="5get-detectors-without-schedule">5.Get Detectors Without Schedule</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorConfigs/listDectector/:agentId
+</code></pre></div>
+<p>Lists detectors associated with a specific agent that do not have schedules.</p>
+<h4 id="6-get-detector-config-by-id">6. Get Detector Config by ID</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorConfigs/:detectorConfigId
+</code></pre></div>
+<p>Retrieves details of a specific detector configuration by its ID.</p>
+<h4 id="7update-detector-config">7.Update Detector Config</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/detectorConfigs/:detectorConfigId
+</code></pre></div>
+<p>Updates the details of a specific detector configuration by its ID.</p>
+<h4 id="8-delete-detector-config">8. Delete Detector Config</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/detectorConfigs/:detectorConfigId
+</code></pre></div>
+<p>Deletes a specific detector configuration by its ID.</p>
+<h4 id="9get-detector-config-by-camera-reference">9.Get Detector Config by Camera Reference</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/detectorConfigs/cameraRef/:cameraRef
+</code></pre></div>
+<p>Retrieves detector configurations linked to a specific camera reference.</p>
+<hr />
+<h2 id="siteroute">SiteRoute</h2>
+<h4 id="1-create-a-site-and-agent">1. Create a Site and Agent</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/sites
+</code></pre></div>
+<p>Creates a new site and agent in the database.</p>
+<p>Additional operations:</p>
+<ul>
+<li>
+<p>Creates Pub/Sub topic and subscription using agent ID.</p>
+</li>
+<li>
+<p>Creates GCP Cloud Storage folders (<code>images</code>, <code>videos</code>, <code>discover</code>, <code>logs</code>).</p>
+</li>
+<li>
+<p>Saves GCP service key and unique UUID (agent access key) to the agent model.</p>
+</li>
+</ul>
+<h4 id="2-fetch-all-sites-for-a-business">2. Fetch All Sites for a Business</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/sites
+</code></pre></div>
+<p>Retrieves all sites for a business.</p>
+<h4 id="3-create-multiple-sites">3. Create Multiple Sites</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/sites/siteByBusiness
+</code></pre></div>
+<p>Creates multiple sites, each with a corresponding agent in the database.</p>
+<h4 id="4-fetch-site-details-by-id">4. Fetch Site Details by ID</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/sites/{siteId}
+</code></pre></div>
+<p>Retrieves details for a specific site by its ID.</p>
+<h4 id="5-update-site-details">5. Update Site Details</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/sites/{siteId}
+</code></pre></div>
+<p>Updates site details.</p>
+<h4 id="6-delete-a-site">6. Delete a Site</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/sites/{siteId}
+</code></pre></div>
+<p>Deletes a site and associated components from the database.</p>
+<p>Additional operations:</p>
+<ul>
+<li>
+<p>Deletes Pub/Sub subscription and topic of the agent.</p>
+</li>
+<li>
+<p>Deletes associated folders and files from GCP storage.</p>
+</li>
+</ul>
+<hr />
+<h2 id="agentoproute">AgentOpRoute</h2>
+<h4 id="1create-operation-request">1.Create Operation Request</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/agentOps/:agentId/:opId
+</code></pre></div>
+<hr />
+<h2 id="dashboardroute">DashboardRoute</h2>
+<h4 id="1-create-a-business-account">1. Create a Business Account</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/businessAccounts
+</code></pre></div>
+<p>Creates a new business, user, and optionally a site in the database.</p>
+<h4 id="2-fetch-all-businesses-or-specific-business-details">2. Fetch All Businesses or Specific Business Details</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts
+</code></pre></div>
+<p>Retrieves all businesses or details for a specific business by business name.</p>
+<h4 id="3-fetch-all-businesses-for-admin-dropdown">3. Fetch All Businesses for Admin Dropdown</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/AllBusiness
+</code></pre></div>
+<p>Retrieves a list of all businesses for admin sidebar's "Switch Business" dropdown.</p>
+<h4 id="4-fetch-businesses-by-type">4. Fetch Businesses by Type</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/business-type/{type}
+</code></pre></div>
+<p>Retrieves a list of businesses filtered by type (e.g., <code>partner</code> or <code>customer</code>).</p>
+<h4 id="5-fetch-assignable-customers">5. Fetch Assignable Customers</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/assign
+</code></pre></div>
+<p>Fetches a list of customers that can be assigned by an admin to a partner.</p>
+<h4 id="6-assign-business-to-partner">6. Assign Business to Partner</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/businessAccounts/assign
+</code></pre></div>
+<p>Assigns a business to a partner.</p>
+<h4 id="7-fetch-all-businesses-except-current">7. Fetch All Businesses Except Current</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/navbar
+</code></pre></div>
+<p>Retrieves a list of all businesses except the current one.</p>
+<p><strong>Note</strong>: This API is currently not in use.</p>
+<h4 id="8-fetch-business-details-by-id">8. Fetch Business Details by ID</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/businessAccounts/{businessAccountId}
+</code></pre></div>
+<p>Retrieves details for a specific business account by its ID.</p>
+<h4 id="9-update-business-account">9. Update Business Account</h4>
+<div class="highlight"><pre><span></span><code>PATCH /v1/businessAccounts/{businessAccountId}
+</code></pre></div>
+<p>Updates business account details, such as business name, email, etc.</p>
+<h4 id="10-delete-business-account">10. Delete Business Account</h4>
+<div class="highlight"><pre><span></span><code>DELETE /v1/businessAccounts/{businessAccountId}
+</code></pre></div>
+<p>Deletes a business account from the database.</p>
+<hr />
+<h2 id="pusherroute">PusherRoute</h2>
+<h4 id="1authenticate-user">1.Authenticate User</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/user-auth
+</code></pre></div>
+<p>Authenticates a user via a GET request.</p>
+<h4 id="2authenticate-user-post">2.Authenticate User (POST)</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/user-auth
+</code></pre></div>
+<p>Authenticates a user via a POST request.</p>
+<h4 id="3authorize-user">3.Authorize User</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/auth
+</code></pre></div>
+<p>Authorizes a user for access to specific resources or actions.</p>
+<hr />
+<h2 id="notificationroute">NotificationRoute</h2>
+<h4 id="1get-notification-list">1.Get Notification List</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/notifications/
+</code></pre></div>
+<p>Retrieves a list of all notifications for the user.</p>
+<h4 id="2create-notification-developmenttesting-only">2.Create Notification (Development/Testing Only)</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/notifications/
+</code></pre></div>
+<p>Creates a new notification for development or testing purposes.</p>
+<h4 id="3-acknowledge-notification">3. Acknowledge Notification</h4>
+<div class="highlight"><pre><span></span><code>PUT /v1/notifications/
+</code></pre></div>
+<p>Marks a notification as acknowledged.</p>
+<h4 id="4get-notification-by-id">4.Get Notification by ID</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/notifications/:notifId
+</code></pre></div>
+<p>Fetches details of a specific notification by its ID.</p>
+<hr />
+<h2 id="lookuproute">LookupRoute</h2>
+<h4 id="1-get-all-constants">1.. Get All Constants</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/constants/all
+</code></pre></div>
+<p>Retrieves all constant values defined in the system.</p>
+<hr />
+<h2 id="discovercameraroute">DiscoverCameraRoute</h2>
+<h4 id="1start-camera-discovery">1.Start Camera Discovery</h4>
+<div class="highlight"><pre><span></span><code>POST /v1/cameraDiscover/:agentRef
+</code></pre></div>
+<p>Initiates the discovery of cameras for the specified agent.</p>
+<h4 id="2get-camera-discovery-list">2.Get Camera Discovery List</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/cameraDiscover/:siteRef/:agentRef
+</code></pre></div>
+<p>Retrieves a list of discovered cameras for the specified site and agent.</p>
+<hr />
+<h2 id="planroute">PlanRoute</h2>
+<h4 id="1get-plan-details">1.Get Plan Details</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/plan/
+</code></pre></div>
+<p>Fetches details of the current plan or subscription.</p>
+<hr />
+<h2 id="collaborationroute">CollaborationRoute</h2>
+<h4 id="1get-collaboration-details">1.Get Collaboration Details</h4>
+<div class="highlight"><pre><span></span><code>GET /v1/collaboration/
+</code></pre></div>
+<p>Retrieves details related to collaboration activities or settings.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Welcome to MkDocs">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Welcome to MkDocs
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../diagram-examples/" class="md-footer__link md-footer__link--next" aria-label="Next: Diagram Examples">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Diagram Examples
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
