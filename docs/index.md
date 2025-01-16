@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# Welcome to Hawk Docs!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This document provides an explanation of the Hawk Project.
 
-## Commands
+#### [ Diagram ](diagram.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+#### [ API ](api.md)
+
+#### [ Agent ](Agent.md)
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
+    mkdocs.yml       # The configuration file.
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        index.md     # The documentation homepage.
+        diagram.md   #Flowchart
+        api.md       #API documentation
+        assets       # Images and other files.

@@ -1,4 +1,4 @@
-# Diagram Examples
+# Diagram
 
 ## Flowcharts
 ```mermaid
